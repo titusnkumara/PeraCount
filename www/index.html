@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="css/material.min.css">
+        <script type="text/javascript" src="js/material.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <link rel="stylesheet" href="css/icon.css">
+
+
+        <!-- grid style css -->
+        <link rel="stylesheet" href="css/grid.css">
+
+
+        <!-- button animations -->
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+
+
+
+
+        <title>Main Window</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="details" style="padding: 10px">
+
+                <!-- material design card -->
+                <div class="mdl-card mdl-shadow--2dp" style="width: 100%;min-height: 15px;padding-bottom: 15px;">
+
+                
+                <div class="grid__col grid__col--10-of-12 grid__col--centered has_margin_top" style="display: table;padding-left: 0px;">
+                 
+                    <h2 class="mdl-card__title-text" style="text-align: center;font-size: 26px;display: table-cell;vertical-align: middle;font-family: inherit;padding-left: 0px;">Pera Count</h2>
+                  
+                </div>
+                 <div class="grid__col grid__col--10-of-12 grid__col--centered" style="display: table;">
+                    <h4 class="mdl-card__title-text" style="text-align: center;font-size: 16px;display: table-cell;vertical-align: middle;">Classified Traffic Volume Count</h4>
+                 </div>
+
+                
+                </div>
+                <div class="mdl-card mdl-shadow--2dp" style="width: 100%;margin-top: 10px;min-height: 132px;">
+                    <div class="grid__col grid__col--10-of-12 grid__col--centered">
+                  <div class="mdl-card__supporting-text" style="text-align: center;padding-top:16px;padding-left: 0px;" >
+
+                    <p style="line-height: 20px;">Developed by </p>
+                    <p>Titus Nanda Kumara
+                    titus.nandakumara@gmail.com</p>
+                  </div>
+                </div>
+                </div>
+
+            </div>
+
+            <div class="grid">
+
+
+
+                <div class="grid__col grid__col--3-of-5 grid__col--centered has_margin_top_large">
+                    <button id="setupButton" class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin: 0 auto;display: block;">
+                      Setup
+                    </button>
+                </div>
+                
+                <div class="grid__col grid__col--3-of-5 grid__col--centered has_margin_top_large">
+                    <button id="dataButton"  class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin: 0 auto;display: block;">
+                      Data Collector
+                    </button>
+                </div>
+                <div class="grid__col grid__col--3-of-5 grid__col--centered has_margin_top_large">
+                    
+                    <button id="manageButton"  class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin: 0 auto;display: block;">
+                      Manage Data
+                    </button>
+                </div>
+                <!-- onclick="window.plugins.toast.showShortTop('Hello there!')" -->
+
+
+
+            </div>
+       
+        </div>
+
+        
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/Toast.js"></script>
+        <script type="text/javascript" src="js/control.js"></script>
+
+
+
+
+
+        <!-- Button animation JS -->
+        <script type="text/javascript" src="js/classie.js"></script>
+        
+
+    </body>
+</html>

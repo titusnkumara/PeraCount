@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <link rel="stylesheet" href="css/material.min.css">
+        <script type="text/javascript" src="js/material.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+
+        <!-- grid style css -->
+        <link rel="stylesheet" href="css/grid.css">
+
+
+        <!-- button animations -->
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+
+
+        <title>Manager</title>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="grid">
+
+
+
+                <div class="grid__col grid__col--3-of-5 grid__col--centered has_margin_top">
+                    <button id="viewProject" class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin: 0 auto;display: block;">
+                      View Data
+                    </button>
+                </div>
+                
+                <div class="grid__col grid__col--3-of-5 grid__col--centered has_margin_top">
+                    <button id="clearData"  class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin: 0 auto;display: block;">
+                      Clear Project
+                    </button>
+                </div>
+                <div class="grid__col grid__col--1-of-4 grid__col--push-1-of-4 has_margin_top">
+                    
+                   <label for="switch1"  id="switchlable" class="mdl-switch mdl-js-switch mdl-js-ripple-effect" style="margin-left: 10px;margin-top: 5px;">
+                      <input type="checkbox" id="switch1" class="mdl-switch__input">
+                    </label>
+
+                </div>
+                <div class="grid__col grid__col--1-of-4 has_margin_top" style="padding-left: 0px;">
+                    
+                   <button id="vibrateButton"  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin: 0 auto;display: block;background-color: #3f51b5;">
+                      Vibrate
+                    </button>
+
+                </div>
+                <!-- onclick="window.plugins.toast.showShortTop('Hello there!')" -->
+
+
+
+            </div>
+       
+        </div>
+
+        <!-- JS script for manager -->
+        <script type="text/javascript" src="js/manager.js"></script>
+        <script type="text/javascript" src="js/Toast.js"></script>
+
+        <!-- Button animation JS -->
+        <script type="text/javascript" src="js/classie.js"></script>
+        
+
+    </body>
+</html>

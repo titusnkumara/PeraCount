@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="css/material.min.css">
+        <script src="js/material.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <link rel="stylesheet" href="css/icon.css">
+
+        <!-- grid css -->
+        <link rel="stylesheet" href="css/grid.css">
+
+
+        <title>Project Setup</title>
+    </head>
+    <body>
+        <div class="container">
+
+            <form > 
+                <div class="grid">
+
+                    <!-- Project Name -->
+                    <div class="grid__col grid__col--3-of-5 grid__col--centered has_margin_top">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="projectName">
+                        <label class="mdl-textfield__label" for="projectName">Project Name</label>
+                      </div>
+                    </div>
+
+                    <div class="grid__col grid__col--3-of-5 grid__col--centered has_margin_top">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="shortName">
+                        <label class="mdl-textfield__label" for="shortName">Short Name</label>
+                      </div>
+                    </div>
+
+
+                    <!-- Date -->
+                    <div class="grid__col grid__col--3-of-5 grid__col--centered has_margin_top">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="datePickerDiv">
+                        <input class="mdl-textfield__input" type="text" id="datePicker" readonly>
+                        <label class="mdl-textfield__label" for="datePicker">Date</label>
+                      </div>
+                    </div>
+
+                    <!-- Day -->
+                    <div class="grid__col grid__col--3-of-5 grid__col--centered has_margin_top">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="dayPickerDiv">
+                        <input class="mdl-textfield__input" type="text" id="dayPicker" readonly >
+                        <label class="mdl-textfield__label" for="dayPicker">Day</label>
+                      </div>
+                    </div>
+
+                    <!-- Station -->
+                    <div class="grid__col grid__col--3-of-5 grid__col--centered has_margin_top">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="station">
+                        <label class="mdl-textfield__label" for="station">Station</label>
+                      </div>
+                    </div>
+
+                    <!-- Road -->
+                    <div class="grid__col grid__col--3-of-5 grid__col--centered has_margin_top">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="road">
+                        <label class="mdl-textfield__label" for="road">Road</label>
+                      </div>
+                    </div>
+
+                    <!-- Movement -->
+                    <div class="grid__col grid__col--3-of-5 grid__col--centered has_margin_top">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="movement">
+                        <label class="mdl-textfield__label" for="movement">Movement</label>
+                      </div>
+                    </div>
+
+                    <!-- From -->
+                    <div class="grid__col grid__col--3-of-5 grid__col--centered has_margin_top">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="from">
+                        <label class="mdl-textfield__label" for="from">From</label>
+                      </div>
+                    </div>
+
+                    <!-- To -->
+                    <div class="grid__col grid__col--3-of-5 grid__col--centered has_margin_top">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="to">
+                        <label class="mdl-textfield__label" for="to">To</label>
+                      </div>
+                    </div>
+              </div>
+            </form>
+            <!-- Save button -->
+            <div class="grid__col grid__col--3-of-5 grid__col--centered has_margin_top_large" style="padding-left: 0px">
+                <button id="saveProjectButton"  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" style="margin: 0 auto;display: block;">
+                        Save
+                </button>
+            </div>
+
+
+        </div>
+
+        
+        <script type="text/javascript" src="js/Toast.js"></script>
+        <script type="text/javascript" src="js/setup.js"></script>
+    </body>
+</html>

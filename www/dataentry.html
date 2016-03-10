@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
+        <link rel="stylesheet" href="css/material.min.css">
+
+
+        
+        
+
+
+        <script src="js/material.min.js"></script>
+        <!-- <link rel="stylesheet" href="css/icon.css"> -->
+        <script type="text/javascript" src="js/common.js"></script>
+
+        <!-- Dataentry page only css -->
+        <link rel="stylesheet" href="css/dataentry.css">
+        <link rel="stylesheet" href="css/grid.css">
+
+
+          <!-- button animations -->
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+
+
+
+
+        <title>Data Entry</title>
+    </head>
+    <body style="font-family: monospace;">
+       
+         
+
+        
+    <div class="container" style="margin-top: 15px;">
+
+    <div class="grid">
+        <div class="grid__col grid__col--10-of-12 grid__col--centered">
+            <p id="projectName" style="font-size:20px;text-align: center;text-transform: capitalize; font-weight: bold; font-family: cursive;margin-bottom: 10px;">Project Title</p>
+          </div>
+
+    </div>
+        <div class="grid">
+
+            
+
+          <div class="grid__col grid__col--1-of-4 grid__col--push-1-of-4">
+            <strong>Station:</strong>
+          </div>
+          <div  class="grid__col grid__col--2-of-5 ">
+            <h7 id="station" >Peradeniya</h7>
+          </div>
+
+          <div class="grid__col grid__col--1-of-4 grid__col--push-1-of-4">
+            <strong>From:</strong>
+          </div>
+          <div  class="grid__col grid__col--2-of-5">
+            <h7 id="fromRoad">Gampola</h7>
+          </div>
+
+          <div class="grid__col grid__col--1-of-4 grid__col--push-1-of-4">
+            <strong>To:</strong>
+          </div>
+          <div  class="grid__col grid__col--2-of-5 ">
+            <h7 id="toRoad">Kandy</h7>
+          </div>
+
+
+        <!-- Time details -->
+          <div class="grid__col grid__col--1-of-4 grid__col--push-1-of-4">
+            <strong>Time:</strong>
+          </div>
+          <div  class="grid__col grid__col--2-of-5">
+            <h7 id="time">00:00:00</h7>
+          </div>
+
+
+
+
+        </div>
+
+
+
+        <div class="section group">
+            <div class="col span_1_of_4">
+            
+                <button id="inputbutton1" class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="min-height: 64px;margin: 0 auto;display: block;background-image: url(img/motorbike.png); background-size: 100% 100%;">
+                MC
+                </button>
+
+            </div>
+
+            <div class="col span_1_of_4">
+                <button id="inputbutton2"  class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="min-height: 64px;margin: 0 auto;display: block; background-image: url(img/schoolvan.png); background-size: 100% 100%;background-color: lemonchiffon;">
+                SV
+                </button>
+            </div>
+
+            <div class="col span_1_of_4">
+                <button id="inputbutton3"  class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="min-height: 64px;margin: 0 auto;display: block; background-image: url(img/mx.png); background-size: 100% 100%;background-color:deepskyblue;">
+                MX
+                </button>
+            </div>
+
+            <div class="col span_1_of_4">
+                <button id="inputbutton4"  class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="min-height: 64px;margin: 0 auto;display: block; background-image: url(img/deliveryvan.png);background-size: 100% 100%;background-color:deepskyblue;">
+                   DV
+                </button>
+            </div>
+
+        </div>
+
+        <div class="section group">
+            <div class="col span_1_of_4">
+            
+                <button id="inputbutton5" class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="min-height: 64px;margin: 0 auto;display: block; background-image: url(img/tuktuk.png); background-size: 100% 100%;">
+                  3W
+                </button>
+
+            </div>
+
+            <div class="col span_1_of_4">
+                <button id="inputbutton6"  class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="min-height: 64px;margin: 0 auto;display: block;background-image: url(img/routingbus.png); background-size: 100% 100%;background-color: lemonchiffon; ">
+               RB
+                </button>
+            </div>
+
+            <div class="col span_1_of_4">
+                <button id="inputbutton7"  class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="min-height: 64px;margin: 0 auto;display: block;background-image: url(img/tractor.png); background-size: 100% 100%;background-color:deepskyblue;">
+                  TR
+                </button>
+            </div>
+
+            <div class="col span_1_of_4">
+                <button id="inputbutton8"  class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="min-height: 64px;margin: 0 auto;display: block; background-image: url(img/lgv.png); background-size: 100% 100%;background-color:deepskyblue;">
+                  LGV
+                </button>
+            </div>
+
+        </div>
+
+        <div class="section group">
+            <div class="col span_1_of_4">
+            
+                <button id="inputbutton9" class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="min-height: 64px;margin: 0 auto;display: block;background-image: url(img/motorcar.png);background-size: 100% 100%;">
+                   C/J/P
+                </button>
+
+            </div>
+
+            <div class="col span_1_of_4">
+                <button id="inputbutton10"  class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="min-height: 64px;margin: 0 auto;display: block;background-image: url(img/nroutingbus.png);background-size: 100% 100%;background-color: lemonchiffon;">
+                NRB
+                </button>
+            </div>
+
+            <div class="col span_1_of_4">
+                <button id="inputbutton11"  class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="min-height: 64px;margin: 0 auto;display: block;" disabled>
+                  MX2
+                </button>
+            </div>
+
+            <div class="col span_1_of_4">
+                <button id="inputbutton12"  class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="min-height: 64px;margin: 0 auto;display: block;background-image: url(img/mediumgv.png);background-size: 100% 100%;background-color:deepskyblue;">
+                MGV
+                </button>
+            </div>
+
+        </div>
+
+        <div class="section group">
+            <div class="col span_1_of_4">
+            
+                <button id="inputbutton13" class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="min-height: 64px;margin: 0 auto;display: block;background-image: url(img/passengervan.png);background-size: 100% 100%;">
+                   PV
+                </button>
+
+            </div>
+
+            <div class="col span_1_of_4">
+                <button id="inputbutton14"  class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="min-height: 64px;margin: 0 auto;display: block;max-width: 64px;padding: 5px;font-size: 13px;" disabled>
+                 Bicycle
+                </button>
+            </div>
+
+            <div class="col span_1_of_4">
+                <button id="inputbutton15"  class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="min-height: 64px;margin: 0 auto;display: block;max-width: 64px;padding: 5px;" disabled>
+                Carts
+                </button>
+            </div>
+
+            <div class="col span_1_of_4">
+                <button id="inputbutton16"  class="cbutton cbutton--effect-ivana mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="min-height: 64px;margin: 0 auto;display: block;background-image: url(img/truck.png);background-size: 100% 100%;background-color:deepskyblue;">
+                HGV
+                </button>
+            </div>
+
+        </div>
+
+        <div class="section group">
+        </div>
+
+
+
+        <div class="grid">
+
+        
+        <!-- Save button and undo button commented out -->
+        <!-- <div class="grid__col grid__col--1-of-5">
+          </div>
+         <div class="grid__col grid__col--1-of-5">
+            <button id="undobutton"  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect " style="margin: 0 auto;display: block;">
+            Undo
+            </button>
+          </div>
+
+          <div class="grid__col grid__col--1-of-5">
+          </div>
+
+          <div class="grid__col grid__col--1-of-5">
+            <button id="savebutton"  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" style="margin: 0 auto;display: block;">
+            Save
+            </button>
+          </div>
+
+          <div class="grid__col grid__col--1-of-5">
+          </div>
+        </div> -->
+
+        <div class="grid__col grid__col--1-of-5 grid__col--push-1-of-12" style="margin-top: 8px">
+            <button id="undobutton"  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect " style="margin: 0 auto;display: block;">
+            Undo
+            </button>
+        </div>
+
+        <div class="grid__col grid__col--1-of-5 grid__col--push-2-of-12">
+            <h7>
+            Last vehicle
+           </h7>
+        </div>
+
+        <div class="grid__col ">
+            <button id="lastclickButton"  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin: 0 auto;display: block; color: white; min-height: 64px;max-width: 64px; padding: 10px;text-shadow: #000 0px 0px 1px;-webkit-font-smoothing: antialiased;" disabled>
+            None
+            </button>
+        </div>
+
+
+    </div>
+    </div>
+        
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        
+        <script type="text/javascript" src="js/Toast.js"></script>
+        <!-- <script type="text/javascript" src="js/control.js"></script> -->
+        
+        <script type="text/javascript" src="js/dataentry.js"></script>
+
+
+         <!-- Button animation JS -->
+        <script type="text/javascript" src="js/classie.js"></script>
+
+    </body>
+</html>
